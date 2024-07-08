@@ -1,0 +1,1 @@
+This is the routes folder where all the routes for the project will be written
