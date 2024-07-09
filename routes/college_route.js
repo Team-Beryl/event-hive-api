@@ -3,7 +3,7 @@ import { deleteCollege, getACollege, getCollege, patchCollege, postCollege } fro
 import { remoteUpload } from "../middlewares/upload.js";
 
 
-const collegeRouter = Router();
+export const collegeRouter = Router();
 
 collegeRouter.post('/colleges', remoteUpload.single('banner'),postCollege)
 

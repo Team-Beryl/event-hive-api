@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { remoteUpload } from "../middleware/upload.js";
+import { remoteUpload } from "../middlewares/upload.js";
 import { addEvent, deleteEvent, getEvent, getEvents, updateEvent } from "../controllers/event_controller.js";
 
 export const eventRouter = Router();
