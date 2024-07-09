@@ -1,6 +1,8 @@
 import express from 'express'
 import { dbConnection } from './config/db.js';
 import { eventRouter } from './routes/event_route.js';
+import { collegeRouter } from './routes/college_route.js';
+
 
 
 
@@ -10,6 +12,9 @@ dbConnection();
 
 app.use(express.json());
 app.use(eventRouter)
+app.use(collegeRouter);
+
+
 
 const PORT = 1000;
 
