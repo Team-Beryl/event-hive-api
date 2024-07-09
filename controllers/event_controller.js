@@ -41,7 +41,7 @@ export const updateEvent = async (req, res, next) => {
     try {
        const updatedEvent = await EventModel.findByIdAndUpdate(
         req.params.id,
-        { ...req.body, flier: req?.file?.filename },
+        { ...req.body, banner: req?.file?.filename },
         { new: true }
     ) 
        res.status(201).send(updatedEvent)
