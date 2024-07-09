@@ -13,4 +13,6 @@ const collegeSchema = new Schema ({
    timestamps:true
 });
 
+collegeSchema.plugin(toJSON);
+
 export const CollegeModel = model('College', collegeSchema);
